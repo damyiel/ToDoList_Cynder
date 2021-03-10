@@ -12,7 +12,7 @@ const Header = ({title}) => {
 }
 
 Header.defaultProps = {
-    title: 'Damyiels Header',
+    title: 'Simple To Do List',
 }
 
 Header.propTypes = {
