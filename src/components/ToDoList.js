@@ -1,18 +1,20 @@
-import React from 'react'
 import '../App.css';
 import {Button, Card} from 'react-bootstrap'
-const ToDoList = ({title1}, {title2}) => {
+const ToDoList = ({title, description, button1, button2, id, deleteHandler}) => {
+
+
     return (
+
+
         <Card style={{ width: '18rem' }}>
-    
+        
         <Card.Body>
-          <Card.Title>To Do Title</Card.Title>
+          <Card.Title>{title}</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            {description}
           </Card.Text>
-          <Button variant="primary">{title1}</Button>
-          <Button variant="info">Delete</Button>
+          <Button variant="primary">{button1}</Button>
+          <Button variant="danger" onClick={() => deleteHandler(id)}>{button2}</Button>
         </Card.Body>
       </Card>
     )
