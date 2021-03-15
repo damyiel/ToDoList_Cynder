@@ -1,7 +1,7 @@
 import '../App.css';
 import {Button, Card, Container, Modal} from 'react-bootstrap'
 import React, {useState, useEffect} from 'react'
-import EditModal from './EditModal'
+
 const ToDoList = ({title, description, button1, button2, id, deleteHandler, updateStatus, handleLineThrough, completed}) => {
   
   
